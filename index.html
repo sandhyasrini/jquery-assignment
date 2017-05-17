@@ -1,0 +1,65 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<title>JSON DATA</title>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<!-- <link rel="stylesheet" type="text/css" href="css/style.css"> 
+ -->
+</head>
+
+<body>
+
+<div class="container row">
+<div class="col-lg-5">
+<table id="location" border='1' class="table table-bordered table-striped">
+    <tr>
+        <th>Countries</th>
+         <th>Population</th>
+         <th class="hide delete_class">new</th>
+    </tr>
+</table>
+</div>
+<div class="col-lg-7">
+<div id="graphWrap1" >
+        <h2>Gross Domestic Product of G20 countries in 2013</h2>
+
+</div>
+<form class="form-horizontal">
+ <div class="form-group pull-left">
+                                 <label  class="col-sm-6 control-label"
+                                    >Country Name</label>
+                                 <div class="col-sm-6">
+                                    <input type="text" class="form-control" 
+                                       id="country_name" placeholder="country"/>
+                                 </div>
+                                 <label  class="col-sm-6 control-label"
+                                    >Population</label>
+                                 <div class="col-sm-6">
+                                    <input type="text" class="form-control" 
+                                       id="population" placeholder="population"/>
+                                 </div>
+                                 <div class="col-sm-4 col-md-offset-8">
+                                    <button class="btn btn-warning center" 
+                                       id="btn_add">ADD</button>
+                                 </div>
+                              </div>
+                              </form>
+</div>
+</div>
+
+
+
+
+ 
+<script src="/js/d3/d3.js"></script>
+    <script src="/js/d3/tooltip.js"></script>
+    <script src="/js/population.js"></script>
+   <script src="/js/jquery-file.js"></script>
+
+</body>
+</html>
