@@ -37,10 +37,6 @@
       "population2013": "247.95"
     },
     {
-      "countryName": "Italy",
-      "population2013": "61.00"
-    },
-    {
       "countryName": "Japan",
       "population2013": "127.34"
     },
@@ -71,6 +67,14 @@
     {
       "countryName": "albania",
       "population2013": "125.45"
+    },
+    {
+      "countryName": "south korea",
+      "population2013": "80.56"
+    },
+    {
+      "countryName": "italy",
+      "population2013": "300.43"
     }
   ]
 }

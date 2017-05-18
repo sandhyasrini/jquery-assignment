@@ -198,25 +198,33 @@ d3.json("http://localhost:3004/countries", function( countriesAndContinents ) {
         .attr("dy", ".71em")
         .style("font-size",20)
         .style("text-anchor", "middle")
-        .style("fill",c20)
-        .text("country");
+        .style("fill","white")
+        .style("font-family","Varela Round")
+        .text("COUNTRY");
 
     d3.selectAll(".x .tick text")
       .attr("transform", "rotate(-45)")
-      .style("text-anchor", "end");
+      .style("text-anchor", "end")
+      .style("font-family","Varela Round")
+      .style("font-size","18px");
 
     svg1.append("g")
         .attr("class", "y axis")
         .call(yAxis)
       .append("text")
         .attr("transform", "rotate(-90)")
-        .attr("x", -200)
-        .attr("y", -60)
+        .attr("x", -250)
+        .attr("y", -70)
         .attr("dy", ".71em")
         .style("font-size",20)
         .style("text-anchor", "middle")
-        .style("fill",c20)
-        .text( "population-2013" );
+        .style("fill","white")
+        .style("font-family","Varela Round")
+        .text( "POPULATION-2013" );
+
+        d3.selectAll(".y .tick text")
+      .style("font-family","Varela Round")
+      .style("font-size","18px");
 
     svg1.selectAll(".bar")
           .data( plottingData )
@@ -226,7 +234,7 @@ d3.json("http://localhost:3004/countries", function( countriesAndContinents ) {
         .attr("width", 40)
         .attr("y", function(d) { return y(parseFloat(d.population2013)); })
         .attr("height", function(d) { return height - y(parseFloat(d.population2013)); })
-        .attr("fill",c20b)
+        // .attr("fill",c20b)
         .on('mouseover', populationTip.show)
         .on('mouseout', populationTip.hide);
   });

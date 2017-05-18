@@ -1,3 +1,17 @@
+body{
+  /*background-color: #caebf2;*/
+}
+
+body table tr, td, th {
+        font-family: 'Varela Round'; 
+        font-size: 20px;
+
+}
+label{
+          font-family: 'Varela Round'; 
+          font-size: 15px;
+
+}
 .wrapper {
   background: #f2f2f2;
   margin: auto;
@@ -15,6 +29,7 @@
   margin-right: auto;
   width: 80%;
   box-shadow: 0 0 2px #999;
+    
 }
 .divider {
   margin-top: 30px;
@@ -25,10 +40,13 @@
 }
 
 h2{
-  color: #fa8070;
+  color: #EDBC43;
+   font-family: 'Varela Round';
+   margin-bottom: 20px;
+   padding-bottom: 20px;
 }
 .bar {
-  fill: #3399ff;
+  fill: #ff3b3f;
 }
 
 .bar:hover {
@@ -43,6 +61,10 @@ h2{
   fill: #3399ff;
 }
 
+
+#graphWrap1 svg{
+  background-color: #a9a9a9;
+}
 
 #graphWrap3 .bar {
   fill: #0065cc;
